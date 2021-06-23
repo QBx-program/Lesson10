@@ -23,7 +23,7 @@ class Cell:
         end_row = self.cell % in_row
         string = ''
         for i in range(row):
-            string = f'{"*" * in_row}/n{string}'
+            string = f'{string}{"*" * in_row}/n'
         string = f'{string}{"*" * end_row}'
         return string
 
